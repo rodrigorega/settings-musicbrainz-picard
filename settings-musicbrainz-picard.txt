@@ -1,5 +1,8 @@
+Official documentation:
+	https://picard.musicbrainz.org/docs/options/
+
 Installation:
-	Install the packages: picard, libchromaprint-tools
+	# aptitude install  picard
 
 After Picard is installed, run it and go to the following menus:
 	Options / Options:
@@ -8,12 +11,12 @@ After Picard is installed, run it and go to the following menus:
 			- Port: 80
 			- Username: <enter yours>
 			- Password: <enter yours>
-			- Automatically scan all new files: Disabled. We prefer to do stuff manually
+			- Automatically scan all new files: Enabled.
 			- Ignore MBIDs when loading new files: Disabled. When updating your existing file tags, you will probably want to keep the chosen release as is.
 
 		Metadata:
-			- Translate artist names to this locale where possible: Disabled. We want accurate metadata, not convenience metadata.
-			- Use standardized artist names: Disabled. TODO: Resolve according to http://forums.musicbrainz.org/viewtopic.php?pid=21434
+			- Translate artist names to this locale where possible: Enabled. Not sure, but I think this will prevent to have tags with kanjis.
+			- Use standardized artist names: Enabled. "Snoop Doggy Dogg" will be "Snoop Doggy".
 			- Convert Unicode punctuation characters to ASCII: Disabled. The affected characters are in the metadata we received from the MusicBrainz database already. If it makes sense to remove them, MusicBrainz should do that in the official database. But in fact, the style guidline of MusicBrainz says that "Use of basic ASCII punctuation characters [...] is allowed, but typographically-correct punctuation is preferred." which seems to encourage usage of Unicode punctuation (https://musicbrainz.org/doc/Style/Miscellaneous). In other words: When tagging we should try to mess with the official MusicBrainz database contents as little as possible. Noitce: This setting is currently undocumented, the information here is taken from: http://forums.musicbrainz.org/viewtopic.php?id=4121
 			- Use release relationships: Enabled. The more metadata we provide the better.
 			- Use track relationships: Enabled. The more metadata we provide the better.
@@ -29,9 +32,9 @@ After Picard is installed, run it and go to the following menus:
 			Folksonomy Tags:
 				- Ignore tags: "seen live,favorites,fixme,owned"
 				- Only use my tags: Disabled
-				- Minimal tag usage: 50%. This doesn't seem to have an effect with "Maximum number of tags" = 1 (the following setting). It will add the single most voted tag even if it is below this threshold. Nevertheless, I have lowered it to 50% from the default of 90% as 50% is majority vote, which makes sense when voting for a single value.
-				- Maximum number of tags: 1. For being compatible with the most players which support sorting by genre, we stick to a single genre.
-				- Join multiple tags with: <empty>
+				- Minimal tag usage: 70%.
+				- Maximum number of tags: 5.
+				- Join multiple tags with: ,
 				
 			Ratings:
 				- Enable track ratings: Disabled. Ratings are pure opinion and quite useless for others.
@@ -48,8 +51,9 @@ After Picard is installed, run it and go to the following menus:
 			- ID3v2 text encoding: UTF-16. The default for version 2.4 is UTF-8, the default for version 2.3 is UTF-16.
 			
 		Covert art:
-			- Embed cover images into tags: Disabled. It doesn't make sense to bloat every single track with large images.
-			- Save cover images as separate files: Enabled, value: "Cover"
+			- Embed cover images into tags: Enabled. I want to view the cover when I copy individual tracks to my smartphone.
+			- Embed only front images: Enabled.
+			- Save cover images as separate files: Enabled, value: "cover"
 			- Overwrite the file if it already exists: Enabled. We want to be able to continously keep our file's tags up to date. When updating tags, the cover art should also be updated.
 			
 		File naming:
@@ -59,7 +63,7 @@ After Picard is installed, run it and go to the following menus:
 			- Move files to this directory when saving: Enabled, select your desired directory.
 			- Delete empty directories: Enabled. Useful for getting rid of things such as subdirectories for separate discs.
 			- Move additional files: Enabled, "*"
-			- Name files like this: "%albumartist% - $left(%date%,4) - %album%/$if($gt(%totaldiscs%,1),Disc $num(%discnumber%,2) - ,)$num(%tracknumber%,2) - %title%"
+			- Name files like this: %albumartist%/%date% - %album%/$if($gt(%totaldiscs%,1),Disc $num(%discnumber%,2) - ,)$num(%tracknumber%,2) - %title%
 
 		Fingerprinting:
 			- Audio Fingerprinting: Enabled
@@ -106,7 +110,7 @@ After Picard is installed, run it and go to the following menus:
 					- Allow selection of multiple directories: Enabled. Its up to you to not misuse this.
 					- Use advanced query syntax: Enabled. Documentation: http://musicbrainz.org/doc/Text_Search_Syntax
 					- Show a quit confirmation dialog for unsaved changes: Enabled.
-					- Uster interface language: System default
+					- Uster interface language: English
 					
 	
 	View menu:
