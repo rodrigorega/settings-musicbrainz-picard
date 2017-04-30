@@ -66,9 +66,8 @@ After Picard is installed, run it and go to the following menus:
 			- Name files like this: %albumartist%/%date% - %album%/$if($gt(%totaldiscs%,1),Disc $num(%discnumber%,2) - ,)$num(%tracknumber%,2) - %title%
 
 		Fingerprinting:
-			- Audio Fingerprinting: Enabled
-			- Use AcoustID: Selected. AcoustID is the more open solution.
-			- Fingerprint calculator: "/usr/bin/fpcalc".
+			- Audio Fingerprinting->Use AcoustID: Selected. AcoustID is the more open solution.
+			- AcoustID Settings->Fingerprint calculator: "/usr/bin/fpcalc".
 			- API key: <enter your API key>
 			
 		CD Lookup:
