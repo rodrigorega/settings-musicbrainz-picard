@@ -10,7 +10,7 @@ After Picard is installed, run it and go to the following menus:
 			- User interface language: English
 		General:
 			- Server address: musicbrainz.org
-			- Port: 80
+			- Port: 443
 			- Username: <enter yours>
 			- Password: <enter yours>
 			- Automatically scan all new files: Enabled.
