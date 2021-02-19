@@ -23,20 +23,23 @@ After Picard is installed, run it and go to the following menus:
 			- Convert Unicode punctuation characters to ASCII: Disabled. The affected characters are in the metadata we received from the MusicBrainz database already. If it makes sense to remove them, MusicBrainz should do that in the official database. But in fact, the style guidline of MusicBrainz says that "Use of basic ASCII punctuation characters [...] is allowed, but typographically-correct punctuation is preferred." which seems to encourage usage of Unicode punctuation (https://musicbrainz.org/doc/Style/Miscellaneous). In other words: When tagging we should try to mess with the official MusicBrainz database contents as little as possible. Noitce: This setting is currently undocumented, the information here is taken from: http://forums.musicbrainz.org/viewtopic.php?id=4121
 			- Use release relationships: Enabled. The more metadata we provide the better.
 			- Use track relationships: Enabled. The more metadata we provide the better.
-			- Use folksonomy tags as genres: Enabled. While "Genre" is generally a poor concept because it is impossible to accurately determine, it is nice to be able to filter your library by a certain genre when having guests. And because it is very easy to understand that it can never be accurate, everybody will know that and not consider it as absolute truth anyway.
-			- Various artists: "Various Artists"
-			- Non-album-tracks: "[non-album tracks]"
+			- Various artists: "Various Artists".
+			- Non-album-tracks: "[non-album tracks]".
 			
 			Preferred Releases:
 				- Preferred release types: All sliders at middle position
 				- Preferred release countries: <empty>
 				- Preferred release formats: <empty>
 				
-			Folksonomy Tags:
-				- Ignore tags: "seen live,favorites,fixme,owned"
-				- Only use my tags: Disabled
-				- Minimal tag usage: 70%.
-				- Maximum number of tags: 5.
+			Genres:
+                - Use genres from MusicBrainz. Enabled.
+                    - Only use my tags: Disabled.
+                    - Fall back on album's artists genres if no genres are found for the realease or release group: Disabled.
+        			- Use folksonomy tags as genres: Enabled. While "Genre" is generally a poor concept because it is impossible to accurately determine, it is nice to be able to filter your library by a certain genre when having guests. And because it is very easy to understand that it can never be accurate, everybody will know that and not consider it as absolute truth anyway.
+                    - Ignore tags: "seen live, favorites, fixme, owned"
+				
+				- Minimal genre usage: 70%.
+				- Maximum number of genres: 5.
 				- Join multiple tags with: ,
 				
 			Ratings:
