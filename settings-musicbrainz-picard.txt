@@ -6,6 +6,8 @@ Installation:
 
 After Picard is installed, run it and go to the following menus:
 	Options / Options:
+		User Interface:
+			- User interface language: English
 		General:
 			- Server address: musicbrainz.org
 			- Port: 80
