@@ -14,7 +14,6 @@ After Picard is installed, run it and go to the following menus:
 			- MussicBrainz Account: Log in
 			    - MusicBrainz web site should be opened, click "Allow access".
 			    - Paste the token in Picard.
-			- Password: <enter yours>
 			- Automatically scan all new files: Enabled.
 			- Ignore MBIDs when loading new files: Disabled. When updating your existing file tags, you will probably want to keep the chosen release as is.
 
