@@ -117,13 +117,12 @@ After Picard is installed, run it and go to the following menus:
                 - Minimal similarity for file lookups: 70%
                 - Minimal similarity for cluster lookups: 80%
                 - Minimal similarity for matching files to tracks: 40%
-            
     
     View menu:
-        - File browser: Enabled
-        - Cover art: Enabled
-        - Tool bar: Enabled
-        - Search bar: Enabled
+        - File browser: Enabled.
+        - Cover art: Enabled.
+        - Actions: Enabled.
+        - Search: Enabled.
 
     Right click the difference view (at the bottom):
         - Show changes first: Enabled
