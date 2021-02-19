@@ -100,14 +100,18 @@ After Picard is installed, run it and go to the following menus:
                 - Allow selection of multiple directories: Enabled. Its up to you to not misuse this.
                 - Use advanced query syntax: Enabled. Documentation: http://musicbrainz.org/doc/Text_Search_Syntax
                 - Show a quit confirmation dialog for unsaved changes: Enabled.
-                - Uster interface language: English
+                - Uster interface language: English.
 
         Scripting:
-            - Tagger Script: Disabled
+            - Tagger Script: Disabled.
 
         Advanced:
-            Web proxy:
-                - Web Proxy: Disabled
+            - All default.
+            Nework:
+                - Web Proxy: Disabled.
+                - Browser Integration: Enabled.
+                - Default listening port: 8000.
+                - Listen only on localhost: Enabled.
                 
             Matching:
                 - Minimal similarity for file lookups: 70%
