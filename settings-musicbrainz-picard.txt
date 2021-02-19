@@ -52,9 +52,9 @@ After Picard is installed, run it and go to the following menus:
             - Remove APEv2 tags from MP3 files: Enabled.  ID3 is recommended for MP3s. 
             - Preserve these tags from being cleared or overwritten with MusicBrainz data: <empty>. TODO: Add perfect-flac-encode tags.
             - ID3v2 version: 2.3. Version 2.4 is the latest and recommended version, but its support in players is still lacking.
-            - Also include ID3v1 tags in the files: Disabled. ID3v1.1 tags are obsolete and may not work with non-latin scripts. 
             - ID3v2 text encoding: UTF-16. The default for version 2.4 is UTF-8, the default for version 2.3 is UTF-16.
-            
+            - Also include ID3v1 tags in the files: Disabled. ID3v1.1 tags are obsolete and may not work with non-latin scripts.
+
         Covert art:
             - Embed cover images into tags: Enabled. I want to view the cover when I copy individual tracks to my smartphone.
             - Embed only front images: Enabled.
