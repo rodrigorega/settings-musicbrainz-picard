@@ -81,6 +81,7 @@ After Picard is installed, run it and go to the following menus:
             
         Plugins:
             * Notice that you need to maximize the settings window to see the full description of a selected plugin.
+            - Add Album Column: Enabled.
             - Add Cluster As Release: Enabled. Very useful for adding new releases to the database.
             - Classic Disc Numbers: Disabled. We shouldn't mess with official style guidelines (see http://musicbrainz.org/doc/Style/Old_style_practices). Also notice: Storing disc numbers in separate tags is necessary for players being able to group albums.
             - Copy Cluster to Clipboard: Enabled. Useful for updating existing releases in the database, for example such without track lengths.
